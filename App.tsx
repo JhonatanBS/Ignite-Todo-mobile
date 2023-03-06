@@ -11,8 +11,6 @@ export default function App() {
       translucent
     />
     <Home />
-    <TextInput />
-    
    </View>
   );
 }
