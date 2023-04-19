@@ -1,10 +1,11 @@
-import { ThemeProvider } from "styled-components";
+import { ThemeProvider } from "styled-components/native";
 
 import { useFonts, Inter_400Regular, Inter_700Bold } from "@expo-google-fonts/inter";
 
 import { ActivityIndicator, StatusBar } from "react-native";
 
 import { Home } from "@screens/Home";
+
 import theme from "./src/theme";
 
 export default function App() {
@@ -18,7 +19,9 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
+
       {fontsLoaded ? <Home /> : <ActivityIndicator />}
+
     </ThemeProvider>
   );
 }
