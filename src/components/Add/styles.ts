@@ -23,7 +23,7 @@ export const Input = styled.TextInput`
   
 
   background-color: ${({theme}) => theme.COLORS.GRAY_500};
-  color: ${({theme}) => theme.COLORS.GRAY_300};
+  color: ${({theme}) => theme.COLORS.GRAY_100};
 
   font-family: ${({theme}) => theme.FONT_FAMILY.REGULAR};
   font-size: ${({theme}) => theme.FONT_SIZE.MD}px;
@@ -31,6 +31,7 @@ export const Input = styled.TextInput`
   border-radius: 6px;
 
   padding: 16px;
+
 `;
 
 export const Button = styled.TouchableOpacity`
