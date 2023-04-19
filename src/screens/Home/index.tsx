@@ -8,7 +8,7 @@ interface IUser {
   done: boolean
 }
 
-export default function Home() {
+export function Home() {
 
   const [] = useState([]);
 
