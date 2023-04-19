@@ -14,7 +14,9 @@ export default {
     GRAY_200: "#D9D9D9",
     GRAY_100: "#F2F2F2",
 
-    DANGER: "#E25858"
+    DANGER: "#E25858",
+
+    WHITE: "#FFFFFF"
   },
   FONT_FAMILY: {
     REGULAR: 'Inter_400Regular',
