@@ -1,7 +1,17 @@
+import { useState } from "react";
 import { View, Image, TextInput, TouchableOpacity, Text } from "react-native";
 import { styles } from "./styles";
 
+interface IUser {
+  id: string,
+  description: string,
+  done: boolean
+}
+
 export default function Home() {
+
+  const [] = useState([]);
+
   return(
     <View style={styles.container}>
       <View style={styles.imageLogo}>
@@ -58,6 +68,9 @@ export default function Home() {
 
           </View>
         </View>
+
+        {/* Tasks */}
+        
 
       </View>
     </View>
