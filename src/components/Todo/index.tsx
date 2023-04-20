@@ -1,10 +1,17 @@
-import {  View } from "react-native";
+import { CheckEmpty, CheckFull, Container, Description, TrashIcon } from "./styles"
 
-export function Todo() {
+interface Props {
+  title: string;
+}
+
+export function Todo({ title }: Props) {
   return(
-    <View>
-      
-
-    </View>
+    <Container>
+      <CheckEmpty />
+      <Description>
+        { title }
+      </Description>
+      <TrashIcon />
+    </Container>
   )
 }
