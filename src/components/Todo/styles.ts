@@ -3,7 +3,7 @@ import styled, { css } from "styled-components/native";
 import { Circle, CheckCircle, Trash } from "phosphor-react-native";
 
 export const Container = styled.View`
-  width: 327px;
+  width: 100%;
   min-height: 64px;
 
   background-color: ${({theme}) => theme.COLORS.GRAY_500};
@@ -16,18 +16,22 @@ export const Container = styled.View`
   margin-bottom: 8px;
 `;
 
+export const BackgroundDone= styled.TouchableOpacity`
+  width: 24px;
+  height: 24px;
+  margin: 0 12px 0 8px;
+`;
+
 export const CheckFull = styled(CheckCircle).attrs(({theme}) => ({
   size: 24,
-  color: theme.COLORS.PURPLE_DARK
+  color: theme.COLORS.PURPLE_DARK,
 }))`
-  margin: 0 12px 0 8px;
 `;
 
 export const CheckEmpty = styled(Circle).attrs(({theme}) => ({
   size: 24,
   color: theme.COLORS.BLUE
 }))`
-  margin: 0 12px 0 8px;
 `;
 
 export const Description = styled.Text`
@@ -36,14 +40,26 @@ export const Description = styled.Text`
     font-family: ${theme.FONT_FAMILY.REGULAR};
     font-size: ${theme.FONT_SIZE.SM}px;
     width: 235px;
+    padding: 10px 0;
   `}
 `;
 
 export const TrashIcon = styled(Trash).attrs(({theme}) => ({
   size: 24,
-  color: theme.COLORS.GRAY_300
+  color: theme.COLORS.DANGER
 }))`
-  margin: 0 8px 0 12px;
+  
 `;
 
+export const BackgroundTrash = styled.TouchableOpacity`
+  width: 32px;
+  height: 32px;
+
+  border-radius: 5px;
+
+  margin-left: 20px;
+
+  justify-content: center;
+  align-items: center;
+`;
 
