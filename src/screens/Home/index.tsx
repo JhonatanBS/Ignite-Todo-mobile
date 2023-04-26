@@ -4,6 +4,7 @@ import { Alert, FlatList } from "react-native";
 
 import { Add, Container, Main } from "./styles";
 
+import { TodosEmpty } from "@components/TodosEmpty";
 import { Input } from "@components/Input";
 import { Counter } from "@components/Counter";
 import { Header } from "@components/Header";
@@ -84,8 +85,9 @@ export function Home() {
               alterTodo={handleAlterDone}
               removeTodo={handleRemoveTodo}
             />
+            
           )}
-
+          ListEmptyComponent={() => (<TodosEmpty />)}
         />
 
       </Main>
