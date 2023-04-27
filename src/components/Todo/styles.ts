@@ -19,7 +19,7 @@ export const Container = styled.View`
 export const BackgroundDone= styled.TouchableOpacity`
   width: 15px;
   height: 15px;
-  margin: 0 12px 0 8px;
+  margin: 0 12px 0 18px;
   border-radius: 20px;
 
   justify-content: center;
