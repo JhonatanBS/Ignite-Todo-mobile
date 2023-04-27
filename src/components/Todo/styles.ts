@@ -17,9 +17,13 @@ export const Container = styled.View`
 `;
 
 export const BackgroundDone= styled.TouchableOpacity`
-  width: 24px;
-  height: 24px;
+  width: 15px;
+  height: 15px;
   margin: 0 12px 0 8px;
+  border-radius: 20px;
+
+  justify-content: center;
+  align-items: center;
 `;
 
 export const CheckFull = styled(CheckCircle).attrs(({theme}) => ({

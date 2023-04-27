@@ -12,11 +12,15 @@ export function Todo({ propsTodo, alterTodo, removeTodo}: PropsTodo) {
   return(
     <Container >
       
-      <BackgroundDone onPress={() => alterTodo(propsTodo)}>
       {propsTodo.isDone ? 
-      <CheckFull weight="fill"/> : <CheckEmpty />}
-
+      <BackgroundDone onPress={() => alterTodo(propsTodo)} style={{backgroundColor: "#FFFFFF"}}>
+        <CheckFull weight="fill"/> 
       </BackgroundDone>
+      : 
+      <BackgroundDone onPress={() => alterTodo(propsTodo)} >
+        <CheckEmpty />
+      </BackgroundDone>
+      }
 
       {propsTodo.isDone ?
       <Description style={{textDecorationLine: "line-through", color: "#808080"}}>
