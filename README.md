@@ -2,7 +2,7 @@
 
 <img src="./Assets/strip.png" width="100%">
 
-<p> Project developed thinking in the creation of Tasks</p>
+<p> The project was developed for creating tasks.</p>
 
 <hr>
 <h4>Todo Empty</h4>
